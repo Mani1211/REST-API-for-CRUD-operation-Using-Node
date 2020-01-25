@@ -35,6 +35,10 @@ connection.once('open',()=>{
     console.log("Mongodb connected");
 })
  
+
+app.get('',(res,req)=>{
+    res.sendTe
+})
 app.get('/incomedetails',(req,res)=>{
     console.log(req.body)     
     Income.find((err,income)=>{
@@ -153,4 +157,7 @@ app.get('/expensedetails/delete/:id',(req,res)=>{
 
 const port=process.env.PORT || 3000
 
-app.listen(port,()=>console.log(`Running on ${port}`));
+app.listen(port,()=>{
+
+    console.log(`Running on ${port}`);
+})
