@@ -37,7 +37,7 @@ connection.once('open',()=>{
  
 
 app.get('',(res,req)=>{
-    res.sendTe
+    console.log('working');
 })
 app.get('/incomedetails',(req,res)=>{
     console.log(req.body)     
